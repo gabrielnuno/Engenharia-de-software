@@ -11,7 +11,7 @@ public class Caixa extends Usuario {
 	}
 	
 	public Livro procurarLivro(Livro livro) {
-		//A FAZER
+		livro = livro.getTitulo();
 		return livro;
 	}
 	
