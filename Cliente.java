@@ -20,7 +20,7 @@ public class Cliente extends Usuario {
 	}
 
 	public Livro procurarLivro(Livro livro) {
-		// A FAZER
+		livro = livro.getTitulo();
 		return livro;
 	}
 
@@ -32,12 +32,18 @@ public class Cliente extends Usuario {
 		// A FAZER
 	}
 
-	public void favoritarLivro() {
-		// A FAZER
+	public void favoritarLivro(Livro livro) {
+		String [] favoritos = new String[100];
+                for(int j = 0; j < favoritos.length; j++){
+                    favoritos[j]= livro.getTitulo();
+                }
 	}
 
-	public void desfavoritarLivro() {
-		// A FAZER
+	public void desfavoritarLivro(Livro livro) {
+		String [] desfavoritos = new String[100];
+                for(int j = desfavoritos.length; j > 0; j--){
+                    desfavoritos[j]= livro.getTitulo();
+                }
 	}
 
 	public ArrayList<Livro> getInventario() {
